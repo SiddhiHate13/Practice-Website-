@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        /* Global styling */
+        *:after {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #e1e0e0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Background styling */
+        .background {
+            width: 430px;
+            height: 520px;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            top: 50%;
+        }
+
+        .background .shape {
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            border-radius: 50%;
+        }
+
+        .shape:first-child {
+            background: linear-gradient(
+                #1845ad,
+                #23a2f6
+            );
+            left: -100px;
+            top: -180px;
+        }
+
+        .shape:last-child {
+            background: linear-gradient(
+                to right,
+                #1845ad,
+                #23a2f6
+            );
+            right: -80px;
+            bottom: -180px;
+        }
+
+        /* Login Form styling */
+        form {
+    height: 550px;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.13);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 80px 45px;
+}
+        form * {
+            font-family: 'Poppins', sans-serif;
+            color: #3e3e3e;
+            letter-spacing: 0.5px;
+            outline: none;
+            border: none;
+        }
+
+        form h2 {
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 42px;
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-top: 30px;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        input {
+            display: block;
+            height: 50px;
+            width: 100%;
+            background-color: rgba(89, 81, 81, 0.24);
+            border-radius: 3px;
+            padding: 0 10px;
+            margin-top: 8px;
+            font-size: 14px;
+            font-weight: 300;
+        }
+
+        ::placeholder {
+            color: rgba(40, 40, 40, 0.582);
+        }
+
+        button {
+    margin-top: 20px;
+    width: 90%;
+    background-color: #272626;
+    color: #e3e1e1;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 230px; /* Adjust the distance from the bottom as needed */
+    left: 50%;
+    transform: translateX(-50%); /* Center the button horizontally */
+}
+    </style>
+</head>
+<body>
+
+    <!-- Background shapes -->
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+    <!-- Login Form -->
+    <form>
+        <h2><strong>Login</strong></h2>
+
+        <label for="username"><strong>Username</strong></label>
+        <input type="text" placeholder="Username" id="username">
+
+        <label for="password"><strong>Password</strong></label>
+        <input type="password" placeholder="Password" id="password">
+<br>
+<br>
+        <button>Login</button>
+    </form>
+
+    <br>
+    <br>
+    <br>
+    <br>
+</body>
+</html>
